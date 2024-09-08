@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb{
+    
+    background: #24cfa6;
+    border-radius: 10px;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none !important;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    color: #24cfa6;
+    cursor: pointer;
+    }
+    .select::-ms-expand {
+        display: none;
+        }
+    .select {
+        position: relative;
+        display: flex;
+        background: #272720; 
+        overflow: hidden;
+    
+        }
+    .select:hover::after {
+                color:#00af86;
+                }        
+    .select:hover{
+                color:#00af86;
+                } 
+
+    .cardnav::-webkit-scrollbar{
+        width: 2px;
+        height: 2px;
+    }
+    .cardmainnav::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+    .personalinfo::-webkit-scrollbar{
+        width: 3px;
+        height: 3px;
+    }
+    .known::-webkit-scrollbar{
+        width: 3px;
+        height: 3px;
+    }
+
+
+    @media (min-width: 640px){
+        .select::after {
+            padding-right: .5em;
+            font-size: .5em;
+            top: 1.3vw;
+            }
+        .cardmainnav::-webkit-scrollbar{
+            width: 7px;
+            height: 7px;
+        }
+        .known::-webkit-scrollbar{
+            width: 7px;
+            height: 7px;
+        }
+
+    }
