@@ -32,7 +32,7 @@ function Moviedetails() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
 
-      }} className='relative overflow-hidden w-full h-auto text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40'>
+      }} className='relative overflow-hidden w-full min-h-screen text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40'>
         {/* nav */}
         <div className='nav text-base gap-3 w-full h-8 flex items-center justify-start sm:text-lg sm:gap-10 sm:h-10'>
           <Link onClick={() => navigate(-1)} className='sm:hover:text-[#24cfa6] duration-300'><FaArrowLeft /></Link>

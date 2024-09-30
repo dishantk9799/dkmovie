@@ -26,18 +26,18 @@ function About() {
                 {/* About content */}
                 <div className='flex flex-col items-start justify-start w-full px-4 py-4 sm:px-8 sm:py-8 text-zinc-200'>
                     <div className='w-full sm:w-[60%]'>
-                        <h2 className='text-5xl  font-semibold text-[#24cfa7] sm:text-[10vw]'>Dkmovie</h2>
+                        <h2 className='text-5xl  font-semibold text-[#24cfa7] sm:text-[10vw]'>dkmovie</h2>
                         <p className='text-base mt-5 font-light sm:text-lg  sm:mt-16'>
-                            At <span className='font-semibold text-[#24cfa7]'>Dkmovie</span>, we are passionate about delivering the latest trailers of movies, TV shows, and much more directly to you. Our goal is to provide an engaging platform for all entertainment enthusiasts to discover and enjoy new content.
+                            At <span className='font-semibold text-[#24cfa7]'>dkmovie</span>, we are passionate about delivering the latest trailers of movies, TV shows, and much more directly to you. Our goal is to provide an engaging platform for all entertainment enthusiasts to discover and enjoy new content.
                         </p>
                         <p className='text-base sm:text-lg leading-relaxed mt-8 font-light'>
-                            My name is <span className='font-semibold text-[#24cfa7]'>Dishant Kumawat</span>, and I have always loved the world of movies and TV shows. With Dkmovie, I strive to create a space where you can explore and enjoy trailers for the latest and greatest entertainment.
+                            My name is <span className='font-semibold text-[#24cfa7]'>Dishant Kumawat</span>, and I have always loved the world of movies and TV shows. With dkmovie, I strive to create a space where you can explore and enjoy trailers for the latest and greatest entertainment.
                         </p>
                         <p className='text-base sm:text-lg leading-relaxed mt-8 font-light'>
-                            Whether you're looking for the next blockbuster film, a binge-worthy series, or something new to explore, Dkmovie is here to bring you closer to the stories and characters you love.
+                            Whether you're looking for the next blockbuster film, a binge-worthy series, or something new to explore, dkmovie is here to bring you closer to the stories and characters you love.
                         </p>
                         <p className='text-base sm:text-lg leading-relaxed mt-5 sm:mt-16 font-light'>
-                            Thank you for visiting us. Enjoy your time on Dkmovie!
+                            Thank you for visiting us. Enjoy your time on dkmovie!
                         </p>
                     </div>
                 </div>

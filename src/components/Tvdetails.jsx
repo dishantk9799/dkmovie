@@ -32,7 +32,7 @@ function Tvdetails() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
 
-      }} className='relative overflow-hidden w-full h-auto text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40'>
+      }} className='relative overflow-hidden w-full min-h-screen text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40'>
         {/* nav */}
         <div className='nav text-base gap-3 w-full h-8 flex items-center justify-start sm:text-lg sm:gap-10 sm:h-10'>
           <Link onClick={() => navigate(-1)} className='sm:hover:text-[#24cfa6] duration-300'><FaArrowLeft /></Link>
@@ -122,10 +122,10 @@ function Tvdetails() {
         {/* seasons */}
         <div className='h-[75vw] gap-3 mt-5 w-full flex flex-col items-start justify-start pb-2 border-b-[2px] border-[#24cfa6] sm:border-white sm:mt-4 sm:h-[22vw] sm:gap-5'>
           <h1 className='text-2xl font-bold'>Seasons</h1>
-          <div className='cardmainnav h-auto w-[100%] flex gap-10 overflow-x-auto sm:gap-16'>
+          <div className='cardmainnav  w-[100%] flex gap-10 overflow-x-auto sm:gap-16'>
             {info.detail.seasons.length > 0 ? info.detail.seasons.map((s, i) => (
               <div key={i} className='flex flex-col gap-1 flex-shrink-0 sm:gap-0 mb-2'>
-                <img className='w-32 h-48 rounded-md sm:w-36 sm:h-56 object-cover shadow-md' src={s.poster_path ? `https://image.tmdb.org/t/p/original/${s.poster_path}` : noimage} alt="" />
+                <img className='w-32 h-44 rounded-md sm:w-36 sm:h-56 object-cover shadow-md' src={s.poster_path ? `https://image.tmdb.org/t/p/original/${s.poster_path}` : noimage} alt="" />
                 <h1 className='text-lg font-semibold w-32 sm:w-36 overflow-hidden text-ellipsis line-clamp-1 text-zinc-200'>{s.name}</h1>
               </div>
             )) : <h1 className='w-full h-full flex items-center font-semibold text-2xl justify-center'>Not Available</h1>

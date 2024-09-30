@@ -27,7 +27,7 @@ function Persondetails() {
   }, [id])
   return info ? (
     <>
-      <div className='relative bg-gradient-to-r from-[#0c0c0c] to-[#24cfa724] overflow-hidden w-full h-auto text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40 sm:bg-black'>
+      <div className='relative bg-gradient-to-r from-[#0c0c0c] to-[#24cfa724] overflow-hidden w-full min-h-screen text-white pt-2 pb-2 px-6 sm:pt-10 sm:px-40 sm:bg-black'>
         {/* nav */}
         <div className='nav text-base w-full h-8 flex items-center justify-start sm:text-lg sm:h-2'>
           <Link onClick={() => navigate(-1)} className='sm:hover:text-[#24cfa6] duration-300'><FaArrowLeft /></Link>
@@ -108,7 +108,7 @@ function Persondetails() {
                     <h1 className='font-semibold text-xl sm:text-3xl'>Work</h1>
                     <Dropdown title="Category" option={["tv","movie"]} onchange={(e)=> setcategory(e.target.value)}/>
           </div>
-          <div className='h-[40vw] list-none px-5 py-4 overflow-x-hidden rounded-md overflow-y-auto w-full bg-zinc-800 sm:h-[40vw] sm:mb-5'>
+          <div className='h-[50vw] list-none px-5 py-4 overflow-x-hidden rounded-md overflow-y-auto w-full bg-zinc-800 sm:h-[40vw] sm:mb-5'>
             {info[category + "Credits"].cast.map((c,i)=>(
               <h1 key={i} className='text-sm  duration-200 cursor-pointer sm:text-base'>
               <Link to={`/${category}/details/${c.id}`}>
